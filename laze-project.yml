@@ -1,8 +1,11 @@
 imports:
   - git:
-      url: https://github.com/ariel-os/ariel-os
-      tag: v0.6.0
+      url: https://github.com/chrysn-pull-requests/ariel-os
+      commit: ad8869fd6ad6b65f020a18567b976395bf40ff8d
     dldir: ariel-os
 
 apps:
   - name: dect-nrplus-analyzer
+    selects:
+      - nrf91-modem
+      - nrf-radiocore-firmware-dect

@@ -6,6 +6,10 @@ edition = "2024"
 [dependencies]
 ariel-os = { path = "build/imports/ariel-os/src/ariel-os", features = [] }
 ariel-os-boards = { path = "build/imports/ariel-os/src/ariel-os-boards" }
+hophop = { git = "https://github.com/hannhank/hophop", branch = "rx-invalid-header"}
+ts-103-636-numbers = { git = "https://github.com/hannhank/hophop", branch = "rx-invalid-header" }
+ts-103-636-utils = { git = "https://github.com/hannhank/hophop", branch = "rx-invalid-header" }
+
 [lints.rust]
 unexpected_cfgs = { level = "warn", check-cfg = [
   'cfg(context, values(any()))',
